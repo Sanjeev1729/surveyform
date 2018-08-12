@@ -1,0 +1,114 @@
+<html>
+        <head>
+           <title>Survey Application</title>
+           <meta charset="utf-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+           <link rel="stylesheet" href = "survey.css">
+        </head>
+        <body>
+           <h1 id = "title">Survey Form</h1>
+           <div id = "formDiv">
+              <p id = "description">Let us know how we can improve freeCodeCamp</p>
+              <form id = "survey-form">
+                 <div class = "left">
+                    <label forname = "name" class="labelwidget" id = "name-label">*Name:</label>
+                    <div class = "right">
+                       <input type = "text" autofocus name = "name" placeholder="Please enter your name" class ="inputBox">
+                    </div>
+                 </div>
+                 <div class = "left">
+                    <label forname = "email" class = "labelwidget" id = "email-label">*Email:</label>
+                    <div class = "right">
+                       <input type = "email" name = "email" placeholder="Please enter your email Id" class="inputBox">
+                    </div>
+                 </div>
+                 <div class = "left">
+                    <label forname = "age" class = "labelwidget" id = "number-label" >*Age:</label>
+                    <div class = "right">
+                       <input type = "number" name = "age" placeholder="Please enter your age" class="inputBox" min = "10" max="140">
+                    </div>
+                 </div>
+                 <div class = "left">
+                    <label forname = "role" class = "labelwidget" id = "role-label">Which of the following describe your current role:</label>
+                    <div class = "right">
+                       <select id = "dropdown" class="inputBox">
+                          <option value = "student">Student</option>
+                          <option value = "freelance">Freelance</option>
+                          <option value = "sayno">Prefer not to say</option>
+                          <option value = "Others">Others</option>
+                       </select>
+                    </div>
+                 </div>
+                 <div class = "left">
+                    <label forname = "rating" class = "labelwidget">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                    <div class="right">
+                       <ul style="list-style:none;">
+                          <li class = "radiobutton">
+                             <label>Definitely
+                             <input type="radio" name = "ratingval" value ="Definitely" class="userrating">
+                             </label>
+                          </li>
+                          <li class = "radiobutton">
+                             <label>Most likely
+                             <input type="radio" name = "ratingval" value ="Most likely"  class="userrating"> 
+                             </label>                      
+                          </li>
+                          <li class = "radiobutton">  
+                             <label>Not sure          
+                             <input type="radio" name = "ratingval" value ="Not Sure"  class="userrating">   
+                             </label>          
+                          </li>
+                       </ul>
+                    </div>
+                 </div>
+                 <div class = "left">
+                    <label forname = "skills" class="labelwidget">Things that should be improved in the future
+                    (Check all that apply):
+                    </label>
+                    <div class="right">
+                       <ul style = "list-style:none;">
+                          <li class = "checkbox">
+                             <label>Front End
+                             <input type = "checkbox" name = "skillsval" value = "frontEnd" class = "learnersSkil">
+                             </label>
+                          </li>
+                          <li class = "checkbox">
+                             <label>Back End
+                             <input type = "checkbox" name = "skillsval" value = "backEnd" class = "learnersSkil">
+                             </label>
+                          </li>
+                          <li class = "checkbox">
+                             <label>Cyber Security
+                             <input type = "checkbox" name = "skillsval" value = "cyber" class = "learnersSkil">
+                             </label>
+                          </li>
+                          <li class = "checkbox">
+                             <label>Nodejs
+                             <input type = "checkbox" name = "skillsval" value = "nodejs" class = "learnersSkil">
+                             </label>
+                          </li>
+                          <li class = "checkbox">
+                             <label>Machine Learning
+                             <input type = "checkbox" name = "skillsval" value = "ML" class = "learnersSkil">
+                             </label>
+                          </li>
+                       </ul>
+                    </div>
+                 </div>
+                 <div class = "left">
+                     <label forname = "comment" class="labelwidget">
+                            Any Comments or Suggestions?  
+                     </label>
+                     <div class="right">
+                         <input type = "textbox" id="textarea" placeholder="Please Comment">
+                     </div>
+                 </div>
+                 <div id = "submitbutton">
+                   <button id = "submit">Submit</button>  
+                 </div>
+              </form>
+           </div>
+        </body>
+     </html>
