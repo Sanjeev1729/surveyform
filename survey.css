@@ -73,7 +73,7 @@ html,body{
     border: 1px border-style #cccccc;
     border : 4px;
     color: blueviolet;
-    background-color: #cccccc;
+    background-color: aquamarine;
     padding: 2px;
 }  
 @media screen and (max-width : 600px) {
